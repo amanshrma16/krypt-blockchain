@@ -43,10 +43,10 @@ export const TransactionProvider = ({children}) => {
           if (ethereum) {
             const transactionsContract = createEthereumContract();
     
-            // const connectedAccount = currentAccount.toLowerCase(); // Convert to lowercase for consistency
-            // const availableTransactions = await transactionsContract.getAllTransactions({ filterBySender: connectedAccount });
-
+            const connectedAccount = currentAccount.toLowerCase(); // Convert to lowercase for consistency
             const availableTransactions = await transactionsContract.getAllTransactions();
+
+            // const availableTransactions = await transactionsContract.getAllTransactions();
     
             const structuredTransactions = availableTransactions.map((transaction) => ({
               addressTo: transaction.receiver,
