@@ -1,2 +1,2 @@
 # krypt-blockchain
-Access the app at: https://krypt-blockchain-l7qhc73ir-amanshrma16.vercel.app/
+Access the app at: https://krypt-blockchain-amanshrma16.vercel.app/
