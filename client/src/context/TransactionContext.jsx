@@ -19,7 +19,6 @@ const createEthereumContract = () => {
     const signer = provider.getSigner();
     // const transactionContract = new ethers.Contract(contractAddress, contractABI, signer);
     const transactionContract = new ethers.Contract(contractAddress, contractABI, signer);
-    console.log(contractAddress);
     return transactionContract;
 }
 

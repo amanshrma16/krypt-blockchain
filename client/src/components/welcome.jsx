@@ -8,8 +8,6 @@ import React, {useContext} from 'react';
 
 import { shortenAddress } from "../utils/shortenAddress";
 
-import { contractAddress } from "../utils/constants";
-
 const CommonStyles = "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white";
 
 const Input = ({placeholder,name,type,value,handleChange}) => (
@@ -54,7 +52,7 @@ export default function Welcome() {
 
                     <div className="grid sm:grid-cols-3 grid-cols-2 w-full mt-10">
                         <div className={`rounded-tl-2xl ${CommonStyles}`}>
-                            Reliability {contractAddress}
+                            Reliability
                         </div>
                         <div className={CommonStyles}>Security</div>
                         <div className={`sm:rounded-tr-2xl ${CommonStyles}`}>
